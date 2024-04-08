@@ -4,6 +4,10 @@ li {
     margin-right: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     display: flex;
 }
