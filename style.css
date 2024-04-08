@@ -20,7 +20,7 @@
     justify-content: space-around;
 }
 
-.__image {
+.section-__image {
     margin: 2px;
     width: 30vw;
     height: auto;
