@@ -8,17 +8,13 @@
 }
 
 .section {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-items: center;
     margin: 0;
     padding: 0;
 }
 
-.image-column {
+.image-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
