@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.header-__header-text {
+.header__header-text {
     margin: auto;
     font-size: 32px;
 }
@@ -12,7 +12,7 @@
     padding: 0;
 }
 
-.section-__image-row {
+.section__image-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,34 +20,34 @@
     justify-content: space-around;
 }
 
-.section-__image {
+.section__image {
     margin: 2px;
     width: 30vw;
     height: auto;
 }
 
-.links-__logo-image {
+.links__logo-image {
     max-height: 6vw;
     max-width: 6vw;
 }
 
-.section-__text {
+.section__text {
     margin-left: 8vw;
     margin-right: 8vw;
     font-size: 18px;
     max-width: 35vw;
 }
 
-.footer-links-__list-item {
+.footer-links__list-item {
     list-style-type: none;
     display: inline;
     margin-right: 5px;
 }
 
-.links-__without-underline {
+.links__without-underline {
     text-decoration: none;
 }
 
-.footer-__text {
+.footer__text {
     margin-left: 8px;
 }
