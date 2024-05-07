@@ -1,53 +1,12 @@
-.header {
-    display: flex;
-}
+@import "blocks/header/header.css";
+@import "blocks/header/__header-text/header__header-text.css";
 
-.header__header-text {
-    margin: auto;
-    font-size: 32px;
-}
+@import "blocks/section/section.css";
+@import "blocks/section/__image-row/section__image-row.css";
+@import "blocks/section/__image/section__image.css";
 
-.section {
-    margin: 0;
-    padding: 0;
-}
+@import "blocks/links/_without-underline/links_without-underline.css";
+@import "blocks/links/__logo-image/links__logo-image.css";
 
-.section__image-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.section__image {
-    margin: 2px;
-    width: 30vw;
-    height: auto;
-}
-
-.links__logo-image {
-    max-height: 6vw;
-    max-width: 6vw;
-}
-
-.section__text {
-    margin-left: 8vw;
-    margin-right: 8vw;
-    font-size: 18px;
-    max-width: 35vw;
-}
-
-.footer-links__list-item {
-    list-style-type: none;
-    display: inline;
-    margin-right: 5px;
-}
-
-.links__without-underline {
-    text-decoration: none;
-}
-
-.footer__text {
-    margin-left: 8px;
-}
+@import "blocks/footer/__text/footer__text.css";
+@import "blocks/footer/__list-item/footer__list-item.css";
