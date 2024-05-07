@@ -4,6 +4,7 @@
 @import "blocks/section/section.css";
 @import "blocks/section/__image-row/section__image-row.css";
 @import "blocks/section/__image/section__image.css";
+@import "blocks/section/__text/section__text.css";
 
 @import "blocks/links/_without-underline/links_without-underline.css";
 @import "blocks/links/__logo-image/links__logo-image.css";
