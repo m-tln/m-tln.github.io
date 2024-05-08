@@ -1,3 +1,5 @@
+@import "__header-text/header__header-text.css";
+
 .header {
     display: flex;
 }

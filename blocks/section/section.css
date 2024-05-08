@@ -1,3 +1,7 @@
+@import "__image-row/section__image-row.css";
+@import "__image/section__image.css";
+@import "__text/section__text.css";
+
 .section {
     margin: 0;
     padding: 0;

@@ -1,0 +1,8 @@
+@import "_right/gallery__arrow_right.css";
+@import "_left/gallery__arrow_left.css";
+
+.gallery__arrow {
+    position: absolute;
+    font-size: xxx-large;
+    color: white;
+}
