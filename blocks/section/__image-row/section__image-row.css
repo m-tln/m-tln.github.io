@@ -1,7 +1,13 @@
 .section__image-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: black 1px solid;
+}
+
+@media (max-width: 768px) {
+    .section__image-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
