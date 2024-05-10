@@ -1,11 +1,10 @@
 const elem = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= window.innerHeight) {
-        elem.classList.add('fixed');
-        console.log("dafds")
+    if (window.scrollY >= window.innerHeight / 5) {
+        elem.style.display = 'flex';
     } else {
-        elem.classList.remove('fixed');
+        elem.style.display = 'none';
     }
 });
 
