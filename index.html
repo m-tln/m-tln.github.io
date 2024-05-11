@@ -70,7 +70,6 @@
     <div class="footer__column">
         <!-- Кнопка открытия popup-формы -->
         <button class="footer__feedback-open">Обратная связь</button>
-
         <!-- Popup-форма -->
         <div class="feedback-form__container" id="feedback-popup">
             <div class="feedback-form__content">
@@ -83,19 +82,29 @@
                     <input type="email" id="email" name="email"><br><br>
                     <label for="message">Сообщение:</label>
                     <textarea id="message" name="message"></textarea><br><br>
-                    <input class="popup__feedback-btn" type="submit" value="Отправить">
+                    <input class="feedback-form__button" type="submit" value="Отправить">
                 </form>
             </div>
-
         </div>
-
-
     </div>
+    <div id="countdown">
+        <p>Время до конца бакалавриата:</p>
+        <div id="timer">
+            <span id="days"></span> дней,
+            <span id="hours"></span> часов,
+            <span id="minutes"></span> минут,
+            <span id="seconds"></span> секунд.
+        </div>
+    </div>
+    <div class="rain rain__animation"></div>
+    <button class="rain__button">Дождь</button>
 </footer>
 
 <script src="scripts/gallery-script.js"></script>
 <script src="scripts/feedback-script.js"></script>
 <script src="scripts/top-offset-script.js"></script>
+<script src="scripts/countdown-script.js"></script>
+<script src="scripts/rain-script.js"></script>
 
 </body>
 </html>

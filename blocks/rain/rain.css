@@ -1,0 +1,24 @@
+@import "__open/rain__open.css";
+@import "__animation/rain__animation.css";
+@import "__button/rain__button.css";
+
+@keyframes rain-frames {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 3300px;
+    }
+}
+
+.rain {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/rain.webp);
+    background-position: 0 0;
+}
