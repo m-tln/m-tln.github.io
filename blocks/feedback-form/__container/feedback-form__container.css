@@ -4,12 +4,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
     background-color: rgba(0, 0, 0, 0.9);
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    opacity: 1;
-    transition: opacity 0.3s, height 0.3s;
+    opacity: 0;
+    transition: opacity 2s ease, height 2s ease;
     z-index: 1000;
+}
+
+.feedback-form__container.show {
+    opacity: 1;
+    height: 100%;
 }
