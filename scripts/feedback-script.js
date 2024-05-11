@@ -1,6 +1,6 @@
 const openFeedbackFormButton = document.querySelector('.footer__feedback-open');
-const feedbackPopup = document.getElementById('feedback-popup');
-const closeFeedbackFormButton = document.querySelector('.popup__feedback-close');
+const feedbackPopup = document.querySelector('.feedback-form__container');
+const closeFeedbackFormButton = document.querySelector('.feedback-form__close');
 
 openFeedbackFormButton.addEventListener('click', () => {
     feedbackPopup.style.display = 'block';
@@ -10,7 +10,7 @@ closeFeedbackFormButton.addEventListener('click', () => {
     feedbackPopup.style.display = 'none';
 });
 
-const feedbackForm = document.getElementById('feedback-form');
+const feedbackForm = document.querySelector('.feedback-form');
 feedbackForm.addEventListener('submit', (e) => {
     e.preventDefault();
 

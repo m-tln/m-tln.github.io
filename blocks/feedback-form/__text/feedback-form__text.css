@@ -1,0 +1,6 @@
+.feedback-form__text {
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    font-size: 1.2rem;
+}

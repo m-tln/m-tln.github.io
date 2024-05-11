@@ -1,0 +1,9 @@
+.feedback-form__close {
+    cursor: pointer;
+    position: absolute;
+    bottom: 85%;
+    left: 90%;
+    font-size: 30px;
+    color: black;
+    padding: 20px;
+}

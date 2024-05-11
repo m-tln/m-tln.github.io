@@ -1,6 +1,5 @@
 @import "__text/footer__text.css";
 @import "__list-item/footer__list-item.css";
-@import "__feedback-open/footer__feedback-button.css";
 
 .footer {
     display: flex;

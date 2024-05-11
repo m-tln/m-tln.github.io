@@ -1,0 +1,19 @@
+@import "__open/feedback-form__open.css";
+@import "__content/feedback-form__content.css";
+@import "__close/feedback-form__close.css";
+@import "__container/feedback-form__container.css";
+@import "__text/feedback-form__text.css";
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form input, .feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
