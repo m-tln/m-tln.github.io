@@ -1,2 +1,8 @@
-@import "_without-underline/links_without-underline.css";
-@import "__logo-image/links__logo-image.css";
+.links__logo-image {
+    max-height: 6vw;
+    max-width: 6vw;
+}
+
+.links_without-underline {
+    text-decoration: none;
+}

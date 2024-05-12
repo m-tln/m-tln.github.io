@@ -1,8 +1,37 @@
-@import "__image-row/section__image-row.css";
-@import "__image/section__image.css";
-@import "__text/section__text.css";
-
 .section {
     margin: 0;
     padding: 0;
+}
+
+.section__text {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    font-size: 18px;
+    max-width: 35vw;
+}
+
+.section__image-row {
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .section__image-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.section__image {
+    margin: 2px;
+    width: 30vw;
+    height: auto;
+    border-radius: 5px;
+    border: black 1px solid;
+    transition: transform 0.4s;
+}
+
+.section__image:hover {
+    transform: scale(1.05);
 }

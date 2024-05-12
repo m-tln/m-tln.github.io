@@ -1,7 +1,3 @@
-@import "__open/rain__open.css";
-@import "__animation/rain__animation.css";
-@import "__button/rain__button.css";
-
 @keyframes rain-frames {
     from {
         background-position: 0 0;
@@ -21,4 +17,21 @@
     width: 100%;
     background-image: url(../../images/rain.webp);
     background-position: 0 0;
+}
+
+.rain__open {
+    display: block;
+}
+
+.rain__button {
+    margin-left: 1%;
+    height: 50%;
+    width: 8%;
+    min-width: 100px;
+    border-radius: 10%;
+    font-size: large;
+}
+
+.rain__animation {
+    animation: rain-frames 5s ease-in-out infinite;
 }

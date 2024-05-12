@@ -1,9 +1,16 @@
-@import "__text/footer__text.css";
-@import "__list-item/footer__list-item.css";
-
 .footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 0 1rem;
+}
+
+.footer__text {
+    margin-left: 8px;
+}
+
+.footer__list-item {
+    list-style-type: none;
+    display: inline;
+    margin-right: 5px;
 }
