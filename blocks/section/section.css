@@ -35,3 +35,19 @@
 .section__image:hover {
     transform: scale(1.05);
 }
+
+.section__button_success {
+    background: red;
+}
+
+.section__button_loading {
+    background: blue;
+}
+
+.valid {
+    background-color: green;
+}
+
+.invalid {
+    background-color: red;
+}
