@@ -7,7 +7,7 @@ function countdownScript(targetDate) {
 
         if (difference < 0) {
             clearInterval(timer);
-            document.getElementById('timer').innerHTML = "Событие началось!";
+            document.querySelector('.timer').innerHTML = "Событие началось!";
             return;
         }
 
@@ -16,10 +16,10 @@ function countdownScript(targetDate) {
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        document.getElementById('days').textContent = days;
-        document.getElementById('hours').textContent = hours;
-        document.getElementById('minutes').textContent = minutes;
-        document.getElementById('seconds').textContent = seconds;
+        document.querySelector('.days').textContent = days;
+        document.querySelector('.hours').textContent = hours;
+        document.querySelector('.minutes').textContent = minutes;
+        document.querySelector('.seconds').textContent = seconds;
     }, 1000);
 }
 
